@@ -14,9 +14,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const cors = require("cors");
 app.use(cors());
 app.use(jsonParser);
-// allow cross origin requests from any domain (for testing only)
-// create a new instance of the server and pass in our application as an argument to it's constructor function:
-// set up mongoose connection
+
 
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
