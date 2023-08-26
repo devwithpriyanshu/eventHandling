@@ -7,7 +7,7 @@ const connectDB = require('./db/connect')
 require('dotenv').config();
 var jwt = require("jsonwebtoken");
 const JWT_SECRET = "secret";
-const { auth } = require("./middleware");
+
 const bodyParser = require("body-parser");
 var jsonParser = bodyParser.json();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
